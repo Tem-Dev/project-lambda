@@ -1,0 +1,24 @@
+<div class="ui-layout-container">
+  <div class="squad-ctr">
+    <div class="party-state-ctr">
+      <div class="party-member-state-ui combat-ui">This is one party member</div>
+      <div class="party-member-state-ui combat-ui">This is one party member</div>
+      <div class="party-member-state-ui combat-ui">This is one party member</div>
+    </div>
+  </div>
+  <div class="action-ctr">
+    <div class="player-state-ctr combat-ui">
+      This is the player UI
+    </div>
+    <div class="ability-list">
+      <div class="ability" *ngFor="let ability of playerAbilities">
+<!--        <div class="">-->
+          <div class="rune combat-ui"></div>
+<!--        </div>-->
+        <div class="name">
+          <span>{{ability.name}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
