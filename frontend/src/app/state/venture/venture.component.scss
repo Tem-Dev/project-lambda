@@ -6,8 +6,8 @@ div.ui-layout-container {
     "squad_ui squad_ui squad_ui ph_1 ph_1 ph_1"
     "squad_ui squad_ui squad_ui ph_2 ph_2 ph_2"
     "ph_3 ph_3 ph_3 ph_3 ph_3 ph_3"
-    "action_ui action_ui action_ui action_ui action_ui b"
-    "action_ui action_ui action_ui action_ui action_ui b";
+    "combat_ui combat_ui combat_ui combat_ui combat_ui b"
+    "combat_ui combat_ui combat_ui combat_ui combat_ui b";
   grid-template-columns: repeat(6, 1fr); // 5 columns
   grid-template-rows: repeat(5, 1fr); // 5 rows
 
@@ -36,48 +36,7 @@ div.ui-layout-container {
     }
   }
 
-  div.action-ctr {
-    grid-area: action_ui;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-areas:
-      "ph ph ph"
-      "player_ui player_ui player_ui"
-      "player_ui player_ui player_ui"
-      "ability ability ability"
-      "ability ability ability";
-    grid-template-columns: repeat(3, 1fr); // 5 columns
-    grid-template-rows: repeat(5, 1fr); // 5 rows
-
-    div.player-state-ctr{
-      grid-area: player_ui;
-      margin: 10px;
-    }
-
-    div.ability-list {
-      grid-area: ability;
-      display: flex;
-      flex-direction: row;
-      margin: 0 10px;
-      div.ability {
-        flex: 1;
-        flex-direction: column;
-        div.rune {
-          width: 80px;
-          height: 80px;
-          //margin: 20px;
-          //-webkit-transform: rotate(45deg);
-          //-moz-transform: rotate(45deg);
-          //-o-transform: rotate(45deg);
-          //-ms-transform: rotate(45deg);
-          //transform: rotate(45deg);
-
-        }
-        div.name {
-          padding: 6px 0 0 0;
-        }
-      }
-    }
+  div.combat-ui-ctr {
+    grid-area: combat_ui;
   }
 }

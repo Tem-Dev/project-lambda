@@ -1,0 +1,45 @@
+section.player-ui {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(150deg, rgba(40,46,52, 1) 30%, rgba(40,46,52, 0.1));
+  color: white;
+
+  span, div {
+    text-shadow : 0 0 6px black;
+  }
+
+  div.profile-img-ctr{
+    height: 120px;
+    width: 120px;
+    border: 4px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  div.player-stats-ctr {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    //align-items: flex-end;
+    div {
+      padding: 4px;
+    }
+    .player-tag {
+    }
+
+    .hp-bar {
+
+    }
+
+    .mp-bar {
+    }
+  }
+
+
+
+}

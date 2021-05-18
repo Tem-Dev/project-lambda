@@ -6,19 +6,7 @@
       <div class="party-member-state-ui combat-ui">This is one party member</div>
     </div>
   </div>
-  <div class="action-ctr">
-    <div class="player-state-ctr combat-ui">
-      This is the player UI
-    </div>
-    <div class="ability-list">
-      <div class="ability" *ngFor="let ability of $playerAbilities | async">
-<!--        <div class="">-->
-          <div class="rune combat-ui"></div>
-<!--        </div>-->
-        <div class="name">
-          <span>{{ability.name}}</span>
-        </div>
-      </div>
-    </div>
+  <div class="combat-ui-ctr">
+    <cp-player-combat-ui [playerState]="($playerState | async)"></cp-player-combat-ui>
   </div>
 </div>
