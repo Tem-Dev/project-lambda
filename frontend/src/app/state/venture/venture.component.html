@@ -11,7 +11,7 @@
       This is the player UI
     </div>
     <div class="ability-list">
-      <div class="ability" *ngFor="let ability of playerAbilities">
+      <div class="ability" *ngFor="let ability of $playerAbilities | async">
 <!--        <div class="">-->
           <div class="rune combat-ui"></div>
 <!--        </div>-->

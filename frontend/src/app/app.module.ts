@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {VentureModule} from "./state/venture/venture.module";
+import {HttpClientModule} from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -11,10 +13,10 @@ import {VentureModule} from "./state/venture/venture.module";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     VentureModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

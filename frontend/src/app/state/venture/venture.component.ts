@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Ability} from "./dto/ability";
+import {PlayerStateService} from "./service/player/player-state.service";
+import {Ability} from "./service/player/player-state";
+import { Observable} from "rxjs";
 
 @Component({
   selector: 'cp-venture',
@@ -8,42 +10,12 @@ import {Ability} from "./dto/ability";
 })
 export class VentureComponent implements OnInit {
 
-  playerAbilities: Ability[] = [
-    {
-      name: 'Fireball',
-      damageType: 'fire',
-      damageMultiplier: 1
-    },
-    {
-      name: 'Fire Ward',
-      damageType: 'fire',
-      damageMultiplier: 1
-    },
-    {
-      name: 'Gentle Flame',
-      damageType: 'fire',
-      damageMultiplier: 1
-    },
-    {
-      name: 'Ice Shard',
-      damageType: 'ice',
-      damageMultiplier: 1
-    },
-    {
-      name: 'Barrier of Ice',
-      damageType: 'ice',
-      damageMultiplier: 1
-    },
-    {
-      name: 'Freezing Point ',
-      damageType: 'ice',
-      damageMultiplier: 1
-    },
-  ];
+  $playerAbilities: Observable<Ability[]> = this.pss.effectPlayerAbilities();
 
-  constructor() { }
+  constructor(private pss: PlayerStateService) { }
 
   ngOnInit(): void {
+    this.$playerAbilities = this.pss.effectPlayerAbilities();
   }
 
 }
