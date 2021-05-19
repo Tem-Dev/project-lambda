@@ -3,8 +3,17 @@
     <span>IMG of {{player.name}}</span>
   </div>
   <div class="player-stats-ctr">
-    <div class="player-tag">{{player.name}}</div>
-    <div class="hp-bar">HP: {{player.hp}}</div>
-    <div class="mp-bar">MP: {{player.mp}}</div>
+    <div class="player-tag">
+      <div><span class="name-tag">{{player.name}}</span></div>
+      <div><span class="class-tag">{{player.class}}</span></div>
+    </div>
+    <div class="hp-bar">
+      <div><i>HP: {{player.hp}}/{{player.maxHp}}</i></div>
+      <progress id="health" [value]="player.maxHp" [max]="player.maxHp"></progress>
+    </div>
+    <div class="mp-bar">
+      <div><i>MP: {{player.mp}}/{{player.maxMp}}</i></div>
+      <progress id="mana" [value]="player.mp" [max]="player.maxMp"></progress>
+    </div>
   </div>
 </section>

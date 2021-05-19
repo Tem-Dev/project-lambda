@@ -20,7 +20,9 @@ const playerState: PlayerState = {
     class: 'Tank Support',
     abilities: userAbilities,
     hp: 250,
+    maxHp: 250,
     mp: 100,
+    maxMp: 100,
     statusEffects: []
   }
 }
@@ -30,7 +32,7 @@ const playerState: PlayerState = {
 export class BackendInterceptor implements HttpInterceptor {
   constructor(private injector: Injector) {}
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    if(request.method === "GET" && request.url.endsWith('/player-skills')) {
+    if(request.method === "GET" && request.url.endsWith('/playerSkills')) {
       return new Observable(observer => {
         observer.next(new HttpResponse<Ability[]>({status: 200, body: userAbilities }));
         observer.complete();

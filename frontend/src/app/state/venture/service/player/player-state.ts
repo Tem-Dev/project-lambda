@@ -8,7 +8,9 @@ export interface Player {
   class: string;
   abilities: Ability[];
   hp: number;
+  maxHp: number;
   mp: number;
+  maxMp: number;
   statusEffects: string[];
 }
 
