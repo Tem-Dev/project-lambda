@@ -58,7 +58,7 @@ section.player-ui {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
       }
       progress[value]::-webkit-progress-value {
-        background-image: linear-gradient(90deg, #1F1C18, #f85032);
+        background-image: linear-gradient(90deg, #1F1C18, #f85032 100%);
       }
     }
 
@@ -81,7 +81,7 @@ section.player-ui {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
       }
       progress[value]::-webkit-progress-value {
-        background-image: linear-gradient(90deg, #000046, #1cb5e0);
+        background-image: linear-gradient(90deg, #000046, #1cb5e0 100%);
       }
     }
   }
