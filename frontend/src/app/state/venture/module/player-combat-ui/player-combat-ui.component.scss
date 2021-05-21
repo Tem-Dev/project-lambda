@@ -1,11 +1,12 @@
 section.player-combat-ui {
   width: 100%;
   height: 100%;
+  section.ability-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0 20px;
+  }
 }
 
 
-.combat-ui {
-  border: solid 4px darken(#282e34, 5%);
-  background-color: #282e34;
-  color: white;
-}

@@ -1,0 +1,24 @@
+div.ability {
+  border-top: 2px solid #1F1C18;
+  border-left: 2px solid #1F1C18;
+  padding: 4px 30px 10px 4px;
+  background: linear-gradient(125deg, rgba(40,46,52, 1), rgba(40,46,52, 0.1)), linear-gradient(110deg, rgba(40,46,52, 1), rgba(40,46,52, 0.1));
+  color: white;
+
+  span, div {
+    text-shadow : 0 0 6px black;
+  }
+
+  div.ability-rune-display {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #1F1C18;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  div.ability-name-ctr {
+    font-size: 1.2rem;
+  }
+}

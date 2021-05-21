@@ -1,14 +1,7 @@
 <section class="player-combat-ui" *ngIf="playerState?.player as player">
   <cp-player-ui [player]="player"></cp-player-ui>
-  <div class="combat-ui-ctr">
-    <div class="ability-list">
-      <div class="ability" *ngFor="let ability of player.abilities">
-        <div class="rune combat-ui"></div>
-        <div class="name">
-          <span>{{ability.name}}</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <section class="ability-list">
+    <cp-ability-ui *ngFor="let ability of player.abilities" [ability]="ability"></cp-ability-ui>
+  </section>
 </section>
 

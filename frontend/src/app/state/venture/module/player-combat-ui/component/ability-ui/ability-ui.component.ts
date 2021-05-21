@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Ability} from "../../../../service/player/player-state";
 
 @Component({
   selector: 'cp-ability-ui',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ability-ui.component.scss']
 })
 export class AbilityUiComponent implements OnInit {
+  @Input() ability: Ability;
 
   constructor() { }
 
