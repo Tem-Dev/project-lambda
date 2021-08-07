@@ -7,7 +7,9 @@ import javax.persistence.Id;
 @Entity
 public class Character {
 
-    private @Id @GeneratedValue Long id;
+    @Id @GeneratedValue
+    private Long id;
+
     private String name;
     private int maxHp;
     private int maxMp;
