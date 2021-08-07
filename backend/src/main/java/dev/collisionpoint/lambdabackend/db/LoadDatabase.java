@@ -1,5 +1,6 @@
-package dev.collisionpoint.lambdabackend;
+package dev.collisionpoint.lambdabackend.db;
 
+import dev.collisionpoint.lambdabackend.domain.model.Character;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

@@ -1,5 +1,7 @@
-package dev.collisionpoint.lambdabackend;
+package dev.collisionpoint.lambdabackend.rest.character;
 
+import dev.collisionpoint.lambdabackend.db.CharacterRepository;
+import dev.collisionpoint.lambdabackend.domain.model.Character;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

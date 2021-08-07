@@ -1,4 +1,4 @@
-package dev.collisionpoint.lambdabackend;
+package dev.collisionpoint.lambdabackend.domain.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

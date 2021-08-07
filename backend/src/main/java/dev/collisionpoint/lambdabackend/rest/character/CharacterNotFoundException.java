@@ -1,4 +1,4 @@
-package dev.collisionpoint.lambdabackend;
+package dev.collisionpoint.lambdabackend.rest.character;
 
 public class CharacterNotFoundException extends RuntimeException {
 

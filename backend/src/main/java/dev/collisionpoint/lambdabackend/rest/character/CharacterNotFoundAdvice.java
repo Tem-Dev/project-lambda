@@ -1,4 +1,4 @@
-package dev.collisionpoint.lambdabackend;
+package dev.collisionpoint.lambdabackend.rest.character;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
